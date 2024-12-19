@@ -6,7 +6,7 @@ dotenv.config();
 
 const app = express();
 
-const URL = process.env.URL || "http://127.0.0.1";
+const URL = process.env.URL || "https://tweet-sender-api.onrender.com";
 const PORT = process.env.PORT || 3000;
 
 const authClient = new auth.OAuth2User({
