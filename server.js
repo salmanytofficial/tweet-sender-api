@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 
 const URL = process.env.URL || "http://127.0.0.1";
-const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+const PORT = process.env.PORT || 80;
 
 const authClient = new auth.OAuth2User({
   client_id: process.env.CLIENT_ID,
